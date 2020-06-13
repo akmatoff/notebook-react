@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import Notes from './components/Notes';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+class App extends Component {
+  // Store data in the state
+  state = {
+    notes: [
+      {
+        id: 1,
+        heading: 'Learn React',
+        body: 'Don\'t forget to learn React'
+      },
+      {
+        id: 2,
+        heading: 'Boilerplate',
+        body: 'Boilerplate code is a code snippet that is used a lot with a little or no alteration'
+      }
+    ]
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <Notes notes={this.state.notes}/>
+      </div>
+    );
+  }
+  
+} 
 
 export default App;

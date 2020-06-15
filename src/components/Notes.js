@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import SingleNote from './SingleNote';
-import PropTypes from 'prop-types';
+import AddNote from './AddNote';
 
 class Notes extends Component {
     render() {
@@ -12,11 +12,6 @@ class Notes extends Component {
             </div>
         );
     };
-}
-
-// Prop Types
-Notes.propTypes = {
-    notes: PropTypes.array.isRequired
 }
 
 export default Notes;

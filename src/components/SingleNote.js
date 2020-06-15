@@ -1,18 +1,15 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types';
+import './SingleNote.css';
 
 export class SingleNote extends Component {
     render() {
         return (
-            <div>
-                <p>{this.props.note.heading}</p>
+            <div className="card">
+                <h1 className="heading">{this.props.note.heading}</h1>
+                <div className="body">{this.props.note.body}</div>
             </div>
         )
     }
 }
 
-SingleNote.propTypes = {
-    note: PropTypes.object.isRequired
-}
-
-export default SingleNote
+export default SingleNote;

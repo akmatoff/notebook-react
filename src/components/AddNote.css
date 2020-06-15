@@ -1,0 +1,27 @@
+.add-note {
+    width: 500px;
+    min-height: 80px;
+    background-color: white;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type=text] {
+    border: none;
+    margin-bottom: 10px;
+}
+
+input[name="heading"] {
+    font-weight: bold;
+}
+
+input[type=submit] {
+    border: none;
+    background-color: none;
+    font-weight: bold;
+    cursor: pointer;
+}

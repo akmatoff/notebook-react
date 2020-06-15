@@ -5,6 +5,7 @@
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 20px;
+    margin: 10px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +13,7 @@
 
 input[type=text] {
     border: none;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 input[name="heading"] {
@@ -24,4 +25,6 @@ input[type=submit] {
     background-color: none;
     font-weight: bold;
     cursor: pointer;
+    width: 80px;
+    align-self: center;
 }

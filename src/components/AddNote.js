@@ -11,8 +11,11 @@ class AddNote extends Component {
 
     submitNote = (e) => {
         e.preventDefault();
-        this.props.addNote(this.state.heading, this.state.body);
-        this.setState({heading: '', body: ''})
+        if (this.state.heading !== '' && this.state.body !== '') {
+            this.props.addNote(this.state.heading, this.state.body);
+            this.setState({heading: '', body: ''})
+        }
+        
     }
 
     render() {

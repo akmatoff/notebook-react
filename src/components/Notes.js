@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
 import SingleNote from './SingleNote';
-import AddNote from './AddNote';
 
 class Notes extends Component {
+
     render() {
+        const notesStyle = {
+            display: 'flex',
+            flexDirection: 'column-reverse'
+        }
         return(
-            <div> 
+            <div style={notesStyle}> 
                 {this.props.notes.map((note) => (
                 <SingleNote key={note.id} note={note}></SingleNote>
                 ))}

@@ -1,7 +1,7 @@
 .card {
     width: 500px;
     min-height: 120px;
-    background-color: #35fcbe;
+    background-color: #5cfbbf;
     padding: 20px;
     margin: 10px 0;
     border-radius: 10px;
@@ -16,7 +16,7 @@
     margin-top: 20px;
 }
 
-@media only screen and (max-width: 920px;) {
+@media only screen and (max-width: 920px) {
 	.card {
 	   width: 100%;
 	}

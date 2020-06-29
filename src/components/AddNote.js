@@ -20,11 +20,13 @@ class AddNote extends Component {
 
     render() {
         return(
+            <div className="container">
             <form className="add-note" onSubmit={this.submitNote}>
                 <input name="heading" placeholder="Type heading" type="text" value={this.state.heading} onChange={this.onChange}></input>
                 <input name="body" placeholder="Note..." type="text" value={this.state.body} onChange={this.onChange}></input>
                 <input type="submit" value="Submit"></input>
             </form>
+            </div>
         );
     }
 }

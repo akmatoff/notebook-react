@@ -24,6 +24,9 @@ a {
 
 .container {
   width: 500px;
+}
+
+.centered {
   margin: auto;
 }
 

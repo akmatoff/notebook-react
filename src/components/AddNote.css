@@ -16,6 +16,13 @@ input[type=text] {
     margin: 10px 0;
 }
 
+textarea {
+    border: none;
+    margin: 10px 0;
+    min-width: 100%;
+    max-width: 100%;
+}
+
 input[name="heading"] {
     font-weight: bold;
 }
@@ -23,10 +30,37 @@ input[name="heading"] {
 input[type=submit] {
     border: none;
     background-color: none;
+    color: #222;
     font-weight: bold;
     cursor: pointer;
     width: 80px;
     align-self: center;
+}
+
+.colors-button {
+    cursor: pointer;
+    color: #222;
+}
+
+.colors-button:hover .colors-container {
+    filter: opacity(1);
+    pointer-events: all;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.colors-container {
+    width: 150px;
+    height: 150px;
+    background-color: #222;
+    position: absolute;
+    z-index: 100;
+    filter: opacity(0);
+    pointer-events: none;
+    transition: 0.3s ease;
 }
 
 @media only screen and (max-width: 920px) {

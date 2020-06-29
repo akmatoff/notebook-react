@@ -20,11 +20,15 @@ class AddNote extends Component {
 
     render() {
         return(
-            <div className="container">
+            <div className="container centered">
             <form className="add-note" onSubmit={this.submitNote}>
                 <input name="heading" placeholder="Type heading" type="text" value={this.state.heading} onChange={this.onChange}></input>
-                <input name="body" placeholder="Note..." type="text" value={this.state.body} onChange={this.onChange}></input>
-                <input type="submit" value="Submit"></input>
+                <textarea name="body" placeholder="Note..." type="text" value={this.state.body} onChange={this.onChange}></textarea>
+                <div className="flex-container row">
+                    <input type="submit" value="Submit"></input>
+                    <i className="fas fa-paint-brush colors-button"></i>
+                </div>
+                <div className="colors-container"></div>
             </form>
             </div>
         );

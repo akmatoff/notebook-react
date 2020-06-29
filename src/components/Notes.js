@@ -9,7 +9,7 @@ class Notes extends Component {
             flexDirection: 'column-reverse'
         }
         return(
-            <div style={notesStyle} className="container"> 
+            <div style={notesStyle} className="container centered"> 
                 {this.props.notes.map((note) => (
                 <SingleNote key={note.id} note={note}></SingleNote>
                 ))}
